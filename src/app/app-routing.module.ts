@@ -17,7 +17,7 @@ import { PublicHolidayServiceModule } from './services/public-holiday.service-mo
 @NgModule({
   imports: [RouterModule.forRoot(
     [{ path: 'products', component: ProductListComponent },
-      { path: 'categories', component: CategoryListComponent },
+      { path: 'categories-menu', component: CategoryListComponent },
       { path: 'cryptos', component: CryptoChipsComponent },
       { path: 'public-holidays', component: PublicHolidayListComponent }]), ProductListComponentModule, ProductServiceModule, CategoryListComponentModule, CategorysServiceModule, CryptoChipsComponentModule, CryptoServiceModule, PublicHolidayListComponentModule, PublicHolidayServiceModule],
   exports: [RouterModule]
