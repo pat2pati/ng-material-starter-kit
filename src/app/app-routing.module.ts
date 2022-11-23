@@ -6,6 +6,7 @@ import { CryptoChipsComponent } from './components/crypto-chips/crypto-chips.com
 import { PublicHolidayListComponent } from './components/public-holiday-list/public-holiday-list.component';
 import { ProductFormComponent } from './components/product-form/product-form.component';
 import { EmployeeFormComponent } from './components/employee-form/employee-form.component';
+import { LoginFormComponent } from './components/login-form/login-form.component';
 import { ProductListComponentModule } from './components/product-list/product-list.component-module';
 import { ProductServiceModule } from './services/product.service-module';
 import { CategoryListComponentModule } from './components/category-list/category-list.component-module';
@@ -17,6 +18,8 @@ import { PublicHolidayServiceModule } from './services/public-holiday.service-mo
 import { ProductFormComponentModule } from './components/product-form/product-form.component-module';
 import { EmployeeFormComponentModule } from './components/employee-form/employee-form.component-module';
 import { EmployeeServiceModule } from './services/employee.service-module';
+import { LoginFormComponentModule } from './components/login-form/login-form.component-module';
+import { LoginServiceModule } from './services/login.service-module';
 
 // @ts-ignore
 @NgModule({
@@ -27,8 +30,9 @@ import { EmployeeServiceModule } from './services/employee.service-module';
       { path: 'cryptos', component: CryptoChipsComponent },
       { path: 'public-holidays', component: PublicHolidayListComponent },
       { path: 'create-product', component: ProductFormComponent },
-      { path: 'create-employee', component: EmployeeFormComponent }
-    ]), ProductListComponentModule, ProductServiceModule, CategoryListComponentModule, CategorysServiceModule, CryptoChipsComponentModule, CryptoServiceModule, PublicHolidayListComponentModule, PublicHolidayServiceModule, ProductFormComponentModule, EmployeeFormComponentModule, EmployeeServiceModule],
+      { path: 'create-employee', component: EmployeeFormComponent },
+      { path: 'login', component: LoginFormComponent }
+    ]), ProductListComponentModule, ProductServiceModule, CategoryListComponentModule, CategorysServiceModule, CryptoChipsComponentModule, CryptoServiceModule, PublicHolidayListComponentModule, PublicHolidayServiceModule, ProductFormComponentModule, EmployeeFormComponentModule, EmployeeServiceModule, LoginFormComponentModule, LoginServiceModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
