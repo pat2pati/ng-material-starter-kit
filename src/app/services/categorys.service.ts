@@ -11,4 +11,5 @@ export class CategorysService {
   getAll(): Observable<CategoryModel[]> {
     return this._httpClient.get<CategoryModel[]>('https://fakestoreapi.com/products/categories');
   }
+
 }
