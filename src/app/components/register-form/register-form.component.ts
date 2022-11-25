@@ -14,16 +14,13 @@ export class RegisterFormComponent {
     email: new FormControl(),
     username: new FormControl(),
     password: new FormControl(),
-    name: new FormGroup({
-      firstname: new FormControl,
-      lastname: new FormControl,
-    }),
-    address: new FormGroup({
+      firstname: new FormControl(),
+      lastname: new FormControl(),
       number: new FormControl(),
       street: new FormControl(),
       zipcode: new FormControl(),
       city: new FormControl(),
-    }),
+
     phone: new FormControl(),
 
   });
@@ -36,16 +33,12 @@ export class RegisterFormComponent {
       email: registerForm.get('email')?.value,
       username: registerForm.get('username')?.value,
       password: registerForm.get('password')?.value,
-       name: {
         lastname: registerForm.get('lastname')?.value,
         firstname: registerForm.get('firstname')?.value,
-       },
-      address: {
         street: registerForm.get('street')?.value,
         number: registerForm.get('number')?.value,
         city: registerForm.get('city')?.value,
         zipcode: registerForm.get('zipcode')?.value,
-      },
       phone: registerForm.get('phone')?.value,
 
     }).subscribe();
